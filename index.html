@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mix Art Studio creates custom logos and starter brand kits for small businesses, creators, and side hustles." />
+  <title>Mix Art Studio — Logos & Brand Kits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #181419;
+      --muted: #685d68;
+      --paper: #fffaf2;
+      --card: #ffffff;
+      --line: rgba(24, 20, 25, 0.12);
+      --peach: #ff8a5b;
+      --rose: #ff4f88;
+      --violet: #6c4dff;
+      --mint: #35d5a4;
+      --yellow: #ffd35a;
+      --shadow: 0 24px 70px rgba(43, 23, 57, 0.16);
+      --radius-xl: 32px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 79, 136, 0.18), transparent 34rem),
+        radial-gradient(circle at 85% 12%, rgba(108, 77, 255, 0.16), transparent 28rem),
+        linear-gradient(180deg, #fffaf2 0%, #fff4ec 45%, #fffaf2 100%);
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .site-shell {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 1.08rem;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background:
+        conic-gradient(from 220deg, var(--rose), var(--yellow), var(--mint), var(--violet), var(--rose));
+      box-shadow: 0 12px 26px rgba(255, 79, 136, 0.26);
+      position: relative;
+    }
+
+    .brand-mark::after {
+      content: "M";
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 250, 242, 0.92);
+      color: var(--ink);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.94rem;
+    }
+
+    .nav-links a {
+      padding: 10px 12px;
+      border-radius: 999px;
+    }
+
+    .nav-links a:hover { background: rgba(255,255,255,0.72); color: var(--ink); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: var(--ink);
+      color: white;
+      box-shadow: 0 16px 34px rgba(24, 20, 25, 0.24);
+    }
+
+    .btn-secondary { background: rgba(255,255,255,0.72); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(330px, 0.95fr);
+      align-items: center;
+      gap: 44px;
+      padding: 56px 0 70px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.64);
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 0.86rem;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--mint);
+      box-shadow: 0 0 0 5px rgba(53, 213, 164, 0.18);
+    }
+
+    h1 {
+      margin: 22px 0 18px;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(3.1rem, 8vw, 6.8rem);
+      line-height: 0.9;
+      letter-spacing: -0.075em;
+      max-width: 780px;
+      text-wrap: balance;
+    }
+
+    .accent-word {
+      background: linear-gradient(90deg, var(--rose), var(--violet), #009d72);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy {
+      color: var(--muted);
+      font-size: clamp(1.08rem, 2vw, 1.28rem);
+      line-height: 1.65;
+      max-width: 640px;
+      margin: 0 0 28px;
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .hero-card {
+      background: rgba(255,255,255,0.76);
+      border: 1px solid rgba(255,255,255,0.72);
+      border-radius: var(--radius-xl);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      transform: rotate(1.5deg);
+    }
+
+    .canvas {
+      min-height: 430px;
+      border-radius: 26px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.94), rgba(255,246,236,0.7)),
+        repeating-linear-gradient(90deg, transparent 0 27px, rgba(24,20,25,0.035) 28px),
+        repeating-linear-gradient(0deg, transparent 0 27px, rgba(24,20,25,0.035) 28px);
+      border: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+    }
+
+    .sample-logo {
+      position: absolute;
+      border-radius: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 46px rgba(24,20,25,0.13);
+      padding: 18px;
+    }
+
+    .sample-logo.one {
+      width: 210px;
+      top: 28px;
+      left: 24px;
+      transform: rotate(-8deg);
+    }
+
+    .sample-logo.two {
+      width: 225px;
+      right: 18px;
+      top: 132px;
+      transform: rotate(7deg);
+    }
+
+    .sample-logo.three {
+      width: 250px;
+      left: 72px;
+      bottom: 26px;
+      transform: rotate(-2deg);
+    }
+
+    .mini-title { font-weight: 900; letter-spacing: -0.04em; font-size: 1.15rem; }
+    .mini-type { color: var(--muted); font-size: 0.86rem; margin-top: 4px; }
+
+    .logo-icon {
+      width: 74px;
+      height: 74px;
+      border-radius: 24px;
+      margin-bottom: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    .one .logo-icon { background: #181419; color: #ffd35a; }
+    .two .logo-icon { background: linear-gradient(135deg, #ff4f88, #6c4dff); color: white; }
+    .three .logo-icon { background: #35d5a4; color: #113a30; border-radius: 999px; }
+
+    .paint-splash {
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      border-radius: 40% 60% 65% 35%;
+      background: radial-gradient(circle at 30% 30%, #fff, var(--yellow) 24%, var(--peach) 58%, var(--rose));
+      filter: blur(0.2px);
+      opacity: 0.32;
+      right: -62px;
+      bottom: -52px;
+    }
+
+    section { padding: 72px 0; }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      letter-spacing: -0.06em;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 0.96;
+      max-width: 700px;
+      text-wrap: balance;
+    }
+
+    .section-note {
+      max-width: 390px;
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.78);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: 0 14px 40px rgba(24,20,25,0.07);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      letter-spacing: -0.035em;
+      font-size: 1.35rem;
+    }
+
+    .card p, .card li { color: var(--muted); line-height: 1.58; }
+    .card p { margin: 0; }
+    .card ul { padding-left: 18px; margin: 14px 0 0; }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      margin: 12px 0;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+    }
+
+    .portfolio-piece {
+      min-height: 380px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 18px 45px rgba(24,20,25,0.08);
+    }
+
+    .portfolio-piece.wide { grid-row: span 2; }
+
+    .logo-preview {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba(24,20,25,0.08);
+    }
+
+    .logo-preview img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .piece-copy { padding: 18px 8px 4px; }
+    .piece-copy h3 { margin: 0 0 8px; font-size: 1.55rem; letter-spacing: -0.045em; }
+    .piece-copy p { margin: 0; color: var(--muted); max-width: 430px; line-height: 1.5; }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      counter-reset: step;
+    }
+
+    .step {
+      counter-increment: step;
+      padding: 22px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.62);
+    }
+
+    .step::before {
+      content: "0" counter(step);
+      display: inline-flex;
+      margin-bottom: 32px;
+      color: var(--rose);
+      font-weight: 900;
+    }
+
+    .step strong { display: block; margin-bottom: 8px; font-size: 1.05rem; }
+    .step span { color: var(--muted); line-height: 1.5; display: block; }
+
+    .contact {
+      border-radius: 36px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 211, 90, 0.34), transparent 24rem),
+        radial-gradient(circle at 80% 5%, rgba(255, 79, 136, 0.26), transparent 20rem),
+        #181419;
+      color: white;
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .contact h2 { color: white; }
+    .contact p { color: rgba(255,255,255,0.72); line-height: 1.6; font-size: 1.06rem; }
+    .contact .btn-primary { background: white; color: var(--ink); box-shadow: none; }
+    .contact .btn-secondary { background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2); }
+
+    .contact-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 24px;
+      padding: 22px;
+    }
+
+    .contact-card div {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.72);
+    }
+
+    .contact-card div:last-child { border-bottom: 0; }
+    .contact-card strong { color: white; }
+
+    footer {
+      padding: 34px 0 46px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-weight: 700;
+    }
+
+    @media (max-width: 880px) {
+      .nav { align-items: flex-start; }
+      .nav-links { display: none; }
+      .hero, .portfolio-grid, .contact { grid-template-columns: 1fr; }
+      .hero { padding-top: 28px; }
+      .hero-card { transform: none; }
+      .cards { grid-template-columns: 1fr; }
+      .process { grid-template-columns: repeat(2, 1fr); }
+      .section-head { display: block; }
+      .section-note { margin-top: 14px; }
+    }
+
+    @media (max-width: 560px) {
+      .site-shell { width: min(100% - 22px, var(--max)); }
+      h1 { font-size: 3.15rem; }
+      .hero-actions, .contact .hero-actions { flex-direction: column; }
+      .btn { width: 100%; }
+      .canvas { min-height: 390px; padding: 16px; }
+      .sample-logo.one { left: 12px; top: 20px; width: 190px; }
+      .sample-logo.two { right: 8px; top: 138px; width: 188px; }
+      .sample-logo.three { left: 24px; bottom: 20px; width: 218px; }
+      section { padding: 52px 0; }
+      .process { grid-template-columns: 1fr; }
+      .contact { padding: 28px; border-radius: 26px; }
+      footer { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-shell nav" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Mix Art Studio home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Mix Art Studio</span>
+    </a>
+    <nav class="nav-links" aria-label="Page sections">
+      <a href="#services">Services</a>
+      <a href="#work">Sample work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="mailto:lomixartgo@gmail.com?subject=Logo%20or%20brand%20kit%20request">Start a project</a>
+  </header>
+
+  <main id="top">
+    <section class="site-shell hero">
+      <div>
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Logos • brand kits • small business design</span>
+        <h1>Make your side hustle look <span class="accent-word">real.</span></h1>
+        <p class="hero-copy">Mix Art Studio creates custom logos and starter brand kits for small businesses, creators, and new ideas that need to look polished without a big agency budget.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#services">See packages</a>
+          <a class="btn btn-secondary" href="#work">View sample styles</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Sample logo collage">
+        <div class="canvas">
+          <div class="paint-splash" aria-hidden="true"></div>
+          <article class="sample-logo one">
+            <div class="logo-icon">B</div>
+            <div class="mini-title">Bean & Bloom</div>
+            <div class="mini-type">Cafe logo concept</div>
+          </article>
+          <article class="sample-logo two">
+            <div class="logo-icon">K</div>
+            <div class="mini-title">Klean Co.</div>
+            <div class="mini-type">Cleaning brand kit</div>
+          </article>
+          <article class="sample-logo three">
+            <div class="logo-icon">P</div>
+            <div class="mini-title">Pictou Prints</div>
+            <div class="mini-type">Maker shop identity</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="site-shell">
+      <div class="section-head">
+        <h2>Simple packages for getting started.</h2>
+        <p class="section-note">These are starter prices and can be adjusted once the offer is tested with real customers.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Logo Starter</h3>
+          <p>For a new idea that needs a clean first look.</p>
+          <div class="price">$49</div>
+          <ul>
+            <li>1 custom logo direction</li>
+            <li>Simple color palette</li>
+            <li>PNG files for web/social</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Social Brand Kit</h3>
+          <p>For businesses that want to look consistent online.</p>
+          <div class="price">$99</div>
+          <ul>
+            <li>Logo plus alternate mark</li>
+            <li>Profile image and banner</li>
+            <li>Colors and font suggestions</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Launch Kit</h3>
+          <p>For small businesses ready to look more professional.</p>
+          <div class="price">$249+</div>
+          <ul>
+            <li>Brand kit assets</li>
+            <li>Business card or flyer concept</li>
+            <li>Optional one-page website add-on</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="site-shell">
+      <div class="section-head">
+        <h2>Sample directions we can offer.</h2>
+        <p class="section-note">These are demo styles for the portfolio. Real client work can replace them later.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-piece wide">
+          <div class="logo-preview">
+            <img src="assets/logos/freshnest-cleaning.svg" alt="FreshNest Cleaning logo concept with a sparkling house and leaf mark">
+          </div>
+          <div class="piece-copy">
+            <h3>FreshNest Cleaning</h3>
+            <p>Clean, friendly, and professional for home cleaning, organizing, or local service businesses.</p>
+          </div>
+        </article>
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/logos/greenline-lawn-care.svg" alt="Greenline Lawn Care badge logo concept with grass and sun details">
+          </div>
+          <div class="piece-copy">
+            <h3>Greenline Lawn Care</h3>
+            <p>A bold outdoor badge style for lawn care, landscaping, and handyman brands.</p>
+          </div>
+        </article>
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/logos/pixelfox-creator.svg" alt="PixelFox Creator colorful fox mascot logo concept">
+          </div>
+          <div class="piece-copy">
+            <h3>PixelFox Creator</h3>
+            <p>A punchier mascot-style mark for creators, streamers, gaming names, and online shops.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="site-shell">
+      <div class="section-head">
+        <h2>A clear process, no design confusion.</h2>
+        <p class="section-note">The goal is to make this easy for people who do not know what to ask a designer for.</p>
+      </div>
+      <div class="process">
+        <div class="step"><strong>Quick brief</strong><span>Business name, what you do, colors you like, and where the logo will be used.</span></div>
+        <div class="step"><strong>First concept</strong><span>A clean first direction with logo, colors, and simple mockups.</span></div>
+        <div class="step"><strong>One revision</strong><span>Small changes to tighten the design and make it feel right.</span></div>
+        <div class="step"><strong>Final files</strong><span>Ready-to-use files for profiles, websites, flyers, and social posts.</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="site-shell">
+      <div class="contact">
+        <div>
+          <h2>Ready to test the business idea?</h2>
+          <p>Start with a few demo brand kits, then use this page as the portfolio. Once the offer feels right, we can connect a real contact form and publish it online.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:lomixartgo@gmail.com?subject=Mix%20Art%20Studio%20project">Email Mix Art Studio</a>
+            <a class="btn btn-secondary" href="#services">Review packages</a>
+          </div>
+        </div>
+        <aside class="contact-card" aria-label="Business details">
+          <div><span>Studio</span><strong>Mix Art Studio</strong></div>
+          <div><span>Focus</span><strong>Logos + brand kits</strong></div>
+          <div><span>Good for</span><strong>Small businesses</strong></div>
+          <div><span>Email</span><strong>lomixartgo@gmail.com</strong></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-shell">
+    <span>© 2026 Mix Art Studio</span>
+    <span>Custom logos and starter brand kits.</span>
+  </footer>
+</body>
+</html>

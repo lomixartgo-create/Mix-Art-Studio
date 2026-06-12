@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">PixelFox Creator logo concept</title>
+  <desc id="desc">A colorful fox mascot mark with pixel accents for a streamer or creator brand.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171227"/>
+      <stop offset="0.55" stop-color="#24154A"/>
+      <stop offset="1" stop-color="#0F2E47"/>
+    </linearGradient>
+    <linearGradient id="fox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFB84D"/>
+      <stop offset="0.5" stop-color="#FF5F7A"/>
+      <stop offset="1" stop-color="#8D63FF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#FF5FBD" flood-opacity="0.42"/>
+      <feDropShadow dx="0" dy="22" stdDeviation="30" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="64" fill="url(#bg)"/>
+  <g opacity="0.55">
+    <rect x="160" y="155" width="42" height="42" rx="8" fill="#39F6D3"/>
+    <rect x="226" y="222" width="28" height="28" rx="6" fill="#FFD35A"/>
+    <rect x="944" y="164" width="34" height="34" rx="7" fill="#FF5FBD"/>
+    <rect x="1002" y="254" width="48" height="48" rx="10" fill="#39F6D3"/>
+    <rect x="182" y="690" width="52" height="52" rx="11" fill="#8D63FF"/>
+    <rect x="962" y="665" width="30" height="30" rx="6" fill="#FFD35A"/>
+  </g>
+  <circle cx="600" cy="355" r="244" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="600" cy="355" r="200" fill="#FFFFFF" opacity="0.05"/>
+  <g filter="url(#glow)" transform="translate(342 150)">
+    <path d="M258 34 464 134l-42 286-164 93L94 420 52 134 258 34Z" fill="#100C1E"/>
+    <path d="M258 75 416 151l-32 230-126 71-126-71-32-230 158-76Z" fill="url(#fox)"/>
+    <path d="M100 151 45 45l158 65Z" fill="#FFB84D"/>
+    <path d="M416 151 471 45l-158 65Z" fill="#8D63FF"/>
+    <path d="M160 260h64v52h-64Z" fill="#100C1E"/>
+    <path d="M292 260h64v52h-64Z" fill="#100C1E"/>
+    <path d="M258 312 222 371h72Z" fill="#100C1E"/>
+    <path d="M166 368c46 47 138 47 184 0" fill="none" stroke="#100C1E" stroke-width="24" stroke-linecap="round"/>
+    <path d="M134 190 258 132l124 58" fill="none" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="18" stroke-linecap="round"/>
+    <rect x="80" y="430" width="68" height="68" rx="14" fill="#39F6D3"/>
+    <rect x="368" y="430" width="68" height="68" rx="14" fill="#FFD35A"/>
+  </g>
+  <text x="600" y="690" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-size="86" font-weight="900" letter-spacing="-3" fill="#FFFFFF">PixelFox</text>
+  <text x="600" y="747" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-size="32" font-weight="900" letter-spacing="9" fill="#39F6D3">CREATOR BRAND</text>
+</svg>
