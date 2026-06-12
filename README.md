@@ -9,6 +9,7 @@ Starter website for **Mix Art Studio**, a small logo and brand-kit business idea
 - Sample portfolio directions
 - Simple process section
 - Email call-to-action using `lomixartgo@gmail.com`
+- Request/order page that opens a pre-filled email draft
 
 ## Public website
 
