@@ -10,6 +10,20 @@ Starter website for **Mix Art Studio**, a small logo and brand-kit business idea
 - Simple process section
 - Email call-to-action using `lomixartgo@gmail.com`
 
+## Public website
+
+GitHub Pages:
+
+```text
+https://lomixartgo-create.github.io/Mix-Art-Studio/
+```
+
+GitHub repo:
+
+```text
+https://github.com/lomixartgo-create/Mix-Art-Studio
+```
+
 ## Local preview
 
 From this folder:
