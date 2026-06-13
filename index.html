@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mix Art Studio creates custom logos and starter brand kits for small businesses, creators, and side hustles." />
-  <title>Mix Art Studio — Logos & Brand Kits</title>
+  <meta name="description" content="Mix Art Design helps side hustlers, creators, and small businesses turn ideas into custom art, logos, graphics, and designs people remember." />
+  <title>Mix Art Design — Custom Art, Logos & Creative Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
@@ -257,6 +257,46 @@
     .two .logo-icon { background: linear-gradient(135deg, #ff4f88, #6c4dff); color: white; }
     .three .logo-icon { background: #35d5a4; color: #113a30; border-radius: 999px; }
 
+
+    .hero-art {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: #181419;
+    }
+
+    .hero-art img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.04);
+    }
+
+    .hero-art::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(24,20,25,0.04), rgba(24,20,25,0.74));
+    }
+
+    .hero-art-label {
+      position: relative;
+      z-index: 1;
+      margin: 22px;
+      padding: 18px;
+      border-radius: 22px;
+      color: white;
+      background: rgba(24,20,25,0.52);
+      border: 1px solid rgba(255,255,255,0.24);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-art-label strong { display: block; font-size: 1.28rem; letter-spacing: -0.04em; line-height: 1.12; }
+    .hero-art-label span { display: block; margin-top: 8px; color: rgba(255,255,255,0.78); line-height: 1.4; }
+
     .paint-splash {
       position: absolute;
       width: 190px;
@@ -475,9 +515,9 @@
 </head>
 <body>
   <header class="site-shell nav" aria-label="Main navigation">
-    <a class="brand" href="#top" aria-label="Mix Art Studio home">
+    <a class="brand" href="#top" aria-label="Mix Art Design home">
       <span class="brand-mark" aria-hidden="true"></span>
-      <span>Mix Art Studio</span>
+      <span>Mix Art Design</span>
     </a>
     <nav class="nav-links" aria-label="Page sections">
       <a href="#services">Services</a>
@@ -491,45 +531,34 @@
   <main id="top">
     <section class="site-shell hero">
       <div>
-        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Logos • brand kits • small business design</span>
-        <h1>Make your side hustle look <span class="accent-word">real.</span></h1>
-        <p class="hero-copy">Mix Art Studio creates custom logos and starter brand kits for small businesses, creators, and new ideas that need to look polished without a big agency budget.</p>
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Custom art • logos • side-hustle design</span>
+        <h1>Turn your <span class="accent-word">hustle</span> into something people remember.</h1>
+        <p class="hero-copy">Mix Art Design helps side hustlers, small businesses, creators, and everyday dreamers turn ideas into custom artwork, logos, graphics, and designs that are ready to share, sell, or show off.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#services">See packages</a>
-          <a class="btn btn-secondary" href="#work">View sample styles</a>
+          <a class="btn btn-primary" href="#services">See what we make</a>
+          <a class="btn btn-secondary" href="#work">View artwork</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Sample logo collage">
-        <div class="canvas">
-          <div class="paint-splash" aria-hidden="true"></div>
-          <article class="sample-logo one">
-            <div class="logo-icon">B</div>
-            <div class="mini-title">Bean & Bloom</div>
-            <div class="mini-type">Cafe logo concept</div>
-          </article>
-          <article class="sample-logo two">
-            <div class="logo-icon">K</div>
-            <div class="mini-title">Klean Co.</div>
-            <div class="mini-type">Cleaning brand kit</div>
-          </article>
-          <article class="sample-logo three">
-            <div class="logo-icon">P</div>
-            <div class="mini-title">Pictou Prints</div>
-            <div class="mini-type">Maker shop identity</div>
-          </article>
+      <div class="hero-card" aria-label="Colourful Mix Art Design sample artwork">
+        <div class="canvas hero-art">
+          <img src="assets/artwork/hero-banner.png" alt="Colourful flowing digital artwork for Mix Art Design">
+          <div class="hero-art-label">
+            <strong>Custom art with colour, personality, and a little attitude.</strong>
+            <span>Made for side hustles, creators, local businesses, prints, and personal projects.</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="services" class="site-shell">
       <div class="section-head">
-        <h2>Simple packages for getting started.</h2>
-        <p class="section-note">These are starter prices and can be adjusted once the offer is tested with real customers.</p>
+        <h2>Art and design that helps your idea look real.</h2>
+        <p class="section-note">Start simple. Pick a small logo, a custom art piece, or a bigger launch package when you are ready.</p>
       </div>
       <div class="cards">
         <article class="card">
           <h3>Logo Starter</h3>
-          <p>For a new idea that needs a clean first look.</p>
+          <p>For a new hustle, page, shop, service, or project that needs a clean first look.</p>
           <div class="price">$49</div>
           <ul>
             <li>1 custom logo direction</li>
@@ -538,8 +567,8 @@
           </ul>
         </article>
         <article class="card">
-          <h3>Social Brand Kit</h3>
-          <p>For businesses that want to look consistent online.</p>
+          <h3>Creator Brand Kit</h3>
+          <p>For creators and small businesses that want their page, profile, and posts to look connected.</p>
           <div class="price">$99</div>
           <ul>
             <li>Logo plus alternate mark</li>
@@ -548,8 +577,8 @@
           </ul>
         </article>
         <article class="card">
-          <h3>Launch Kit</h3>
-          <p>For small businesses ready to look more professional.</p>
+          <h3>Art + Launch Kit</h3>
+          <p>For custom art, a stronger brand look, and promo pieces that feel ready to show people.</p>
           <div class="price">$249+</div>
           <ul>
             <li>Brand kit assets</li>
@@ -562,35 +591,35 @@
 
     <section id="work" class="site-shell">
       <div class="section-head">
-        <h2>Sample directions we can offer.</h2>
-        <p class="section-note">These are demo styles for the portfolio. Real client work can replace them later.</p>
+        <h2>Bolder sample work, less plain.</h2>
+        <p class="section-note">These samples show the kind of energy the site should have. Real customer work can replace them as the business grows.</p>
       </div>
       <div class="portfolio-grid">
         <article class="portfolio-piece wide">
           <div class="logo-preview">
-            <img src="assets/logos/freshnest-cleaning.svg" alt="FreshNest Cleaning logo concept with a sparkling house and leaf mark">
+            <img src="assets/artwork/hero-banner.png" alt="Colourful digital art banner with flowing paint and bright creative energy">
           </div>
           <div class="piece-copy">
-            <h3>FreshNest Cleaning</h3>
-            <p>Clean, friendly, and professional for home cleaning, organizing, or local service businesses.</p>
+            <h3>Colour rush hero style</h3>
+            <p>A bright, polished look for the top of the site, social headers, posters, and creative promo graphics.</p>
           </div>
         </article>
         <article class="portfolio-piece">
           <div class="logo-preview">
-            <img src="assets/logos/greenline-lawn-care.svg" alt="Greenline Lawn Care badge logo concept with grass and sun details">
+            <img src="assets/artwork/abstract-print.png" alt="Abstract print style artwork with teal, orange, magenta, and black ink lines">
           </div>
           <div class="piece-copy">
-            <h3>Greenline Lawn Care</h3>
-            <p>A bold outdoor badge style for lawn care, landscaping, and handyman brands.</p>
+            <h3>Abstract print style</h3>
+            <p>A stronger art-print direction with colour, movement, and a handmade mixed-media feel.</p>
           </div>
         </article>
         <article class="portfolio-piece">
           <div class="logo-preview">
-            <img src="assets/logos/pixelfox-creator.svg" alt="PixelFox Creator colorful fox mascot logo concept">
+            <img src="assets/artwork/robot-artist.png" alt="Cute robot artist painting in a colourful studio">
           </div>
           <div class="piece-copy">
-            <h3>PixelFox Creator</h3>
-            <p>A punchier mascot-style mark for creators, streamers, gaming names, and online shops.</p>
+            <h3>Character art style</h3>
+            <p>A playful character-art direction for mascots, profile images, stickers, kids projects, and fun brands.</p>
           </div>
         </article>
       </div>
@@ -598,31 +627,31 @@
 
     <section id="process" class="site-shell">
       <div class="section-head">
-        <h2>A clear process, no design confusion.</h2>
-        <p class="section-note">The goal is to make this easy for people who do not know what to ask a designer for.</p>
+        <h2>Simple process, no design confusion.</h2>
+        <p class="section-note">People should not have to know designer words. They can just explain the idea and we shape it from there.</p>
       </div>
       <div class="process">
-        <div class="step"><strong>Quick brief</strong><span>Business name, what you do, colors you like, and where the logo will be used.</span></div>
-        <div class="step"><strong>First concept</strong><span>A clean first direction with logo, colors, and simple mockups.</span></div>
-        <div class="step"><strong>One revision</strong><span>Small changes to tighten the design and make it feel right.</span></div>
-        <div class="step"><strong>Final files</strong><span>Ready-to-use files for profiles, websites, flyers, and social posts.</span></div>
+        <div class="step"><strong>Quick brief</strong><span>Tell us the idea, the feeling, colours you like, and where the art or design will be used.</span></div>
+        <div class="step"><strong>First concept</strong><span>A first visual direction with art, logo, colours, and simple previews when needed.</span></div>
+        <div class="step"><strong>One revision</strong><span>Small changes to tune the colours, wording, layout, or overall feel.</span></div>
+        <div class="step"><strong>Final files</strong><span>Ready-to-use files for profiles, websites, flyers, signs, prints, and social posts.</span></div>
       </div>
     </section>
 
     <section id="contact" class="site-shell">
       <div class="contact">
         <div>
-          <h2>Ready to test the business idea?</h2>
-          <p>Start with a few demo brand kits, then use this page as the portfolio. Once the offer feels right, we can connect a real contact form and publish it online.</p>
+          <h2>Ready to turn your hustle into something people notice?</h2>
+          <p>Send the idea, even if it is rough. We can start with a logo, a custom art piece, a social graphic, or a small launch package.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="order.html">Request a logo</a>
-            <a class="btn btn-secondary" href="#services">Review packages</a>
+            <a class="btn btn-primary" href="order.html">Request a quote</a>
+            <a class="btn btn-secondary" href="#services">See packages</a>
           </div>
         </div>
         <aside class="contact-card" aria-label="Business details">
-          <div><span>Studio</span><strong>Mix Art Studio</strong></div>
-          <div><span>Focus</span><strong>Logos + brand kits</strong></div>
-          <div><span>Good for</span><strong>Small businesses</strong></div>
+          <div><span>Studio</span><strong>Mix Art Design</strong></div>
+          <div><span>Focus</span><strong>Art + design</strong></div>
+          <div><span>Good for</span><strong>Hustles + creators</strong></div>
           <div><span>Email</span><strong>lomixartgo@gmail.com</strong></div>
         </aside>
       </div>
@@ -630,8 +659,8 @@
   </main>
 
   <footer class="site-shell">
-    <span>© 2026 Mix Art Studio</span>
-    <span>Custom logos and starter brand kits.</span>
+    <span>© 2026 Mix Art Design</span>
+    <span>Custom art, logos, graphics, and starter brand kits.</span>
   </footer>
 </body>
 </html>

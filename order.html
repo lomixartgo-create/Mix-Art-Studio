@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Request a custom logo or starter brand kit from Mix Art Studio." />
-  <title>Request a Logo — Mix Art Studio</title>
+  <meta name="description" content="Request custom art, a logo, or a starter brand kit from Mix Art Design." />
+  <title>Request a Quote — Mix Art Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
@@ -221,18 +221,18 @@
 </head>
 <body>
   <header class="shell nav">
-    <a class="brand" href="index.html" aria-label="Mix Art Studio home">
+    <a class="brand" href="index.html" aria-label="Mix Art Design home">
       <span class="brand-mark" aria-hidden="true"></span>
-      <span>Mix Art Studio</span>
+      <span>Mix Art Design</span>
     </a>
     <a class="back-link" href="index.html">Back to site</a>
   </header>
 
   <main>
     <section class="shell hero">
-      <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Logo request form</span>
-      <h1>Tell us what you need designed.</h1>
-      <p>Fill this out and it will open an email draft addressed to Mix Art Studio. You can review it before sending.</p>
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Quote request form</span>
+      <h1>Tell us what you want made.</h1>
+      <p>Fill this out and it will open an email draft addressed to Mix Art Design. You can review it before sending.</p>
     </section>
 
     <section class="shell layout">
@@ -247,25 +247,25 @@
             <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
           </div>
           <div>
-            <label for="business">Business / project name</label>
-            <input id="business" name="business" required placeholder="Example: FreshNest Cleaning">
+            <label for="business">Business / project / art name</label>
+            <input id="business" name="business" required placeholder="Example: logo, custom print, Twitch banner, shop idea">
           </div>
           <div>
-            <label for="type">Business type</label>
-            <input id="type" name="type" placeholder="Cleaning, lawn care, cafe, streamer...">
+            <label for="type">What is it for?</label>
+            <input id="type" name="type" placeholder="Side hustle, gift, shop, band, streamer, local business...">
           </div>
 
           <div class="full">
-            <label>Package</label>
-            <div class="choices" role="radiogroup" aria-label="Package choice">
+            <label>Project type</label>
+            <div class="choices" role="radiogroup" aria-label="Project type choice">
               <label class="choice"><input type="radio" name="package" value="Logo Starter - $49" checked><span>Logo Starter<br>$49</span></label>
-              <label class="choice"><input type="radio" name="package" value="Social Brand Kit - $99"><span>Social Brand Kit<br>$99</span></label>
-              <label class="choice"><input type="radio" name="package" value="Launch Kit - $249+"><span>Launch Kit<br>$249+</span></label>
+              <label class="choice"><input type="radio" name="package" value="Creator Brand Kit - $99"><span>Social Brand Kit<br>$99</span></label>
+              <label class="choice"><input type="radio" name="package" value="Art + Launch Kit - $249+"><span>Launch Kit<br>$249+</span></label>
             </div>
           </div>
 
           <div>
-            <label for="colors">Colors you like</label>
+            <label for="colors">Colours you like</label>
             <input id="colors" name="colors" placeholder="Blue/green, black/gold, bright, calm...">
           </div>
           <div>
@@ -281,17 +281,17 @@
           </div>
 
           <div class="full">
-            <label for="details">What should the logo feel like?</label>
-            <textarea id="details" name="details" placeholder="Tell us about the business, what you want people to feel, and any ideas you already have."></textarea>
+            <label for="details">What should it feel like?</label>
+            <textarea id="details" name="details" placeholder="Tell us the idea, what you want people to feel, and any style ideas you already have."></textarea>
           </div>
 
           <div class="full">
             <label for="usage">Where will you use it?</label>
-            <textarea id="usage" name="usage" placeholder="Facebook page, business cards, website, truck decal, shirts, signs, YouTube, etc."></textarea>
+            <textarea id="usage" name="usage" placeholder="Facebook, business cards, website, shirts, signs, YouTube, prints, stickers, etc."></textarea>
           </div>
 
           <div class="full">
-            <button class="btn" type="submit">Open email request</button>
+            <button class="btn" type="submit">Open quote request</button>
             <p class="hint">This does not charge anything. It just prepares an email so the request is easy to send.</p>
           </div>
         </div>
@@ -299,21 +299,21 @@
 
       <aside class="side-card" aria-label="What happens next">
         <h2>What happens next?</h2>
-        <p>After the request is sent, Mix Art Studio can reply with questions, timing, and payment details before starting.</p>
+        <p>After the request is sent, Mix Art Design can reply with questions, timing, and payment details before starting.</p>
         <span class="price-pill">$49</span>
         <span class="price-pill">$99</span>
         <span class="price-pill">$249+</span>
         <ul>
-          <li>Good for local businesses and side hustles.</li>
-          <li>Start small with a logo, then upgrade later.</li>
-          <li>Final files can be prepared for social media and web use.</li>
+          <li>Good for local businesses, side hustles, creators, and personal art ideas.</li>
+          <li>Start small, then upgrade later.</li>
+          <li>Final files can be prepared for social media, web, print, or sharing.</li>
         </ul>
-        <div class="note">Tip: include links to logos you like if you have any. It helps the design direction.</div>
+        <div class="note">Tip: include links or screenshots of styles you like if you have any. It helps the direction.</div>
       </aside>
     </section>
   </main>
 
-  <footer>© 2026 Mix Art Studio — Logos and starter brand kits.</footer>
+  <footer>© 2026 Mix Art Design — Custom art, logos, graphics, and starter brand kits.</footer>
 
   <script>
     const form = document.getElementById('orderForm');
@@ -323,25 +323,25 @@
       const packageChoice = data.get('package') || 'Logo Starter - $49';
       const business = data.get('business') || 'New logo project';
       const body = [
-        'Logo / Brand Kit Request',
+        'Mix Art Design Quote Request',
         '',
         `Name: ${data.get('name') || ''}`,
         `Email: ${data.get('email') || ''}`,
-        `Business / project name: ${business}`,
-        `Business type: ${data.get('type') || ''}`,
-        `Package: ${packageChoice}`,
+        `Business / project / art name: ${business}`,
+        `What is it for?: ${data.get('type') || ''}`,
+        `Project type: ${packageChoice}`,
         `Colors: ${data.get('colors') || ''}`,
         `Style: ${data.get('style') || ''}`,
         '',
-        'What should the logo feel like?',
+        'What should it feel like?',
         data.get('details') || '',
         '',
         'Where will you use it?',
         data.get('usage') || '',
         '',
-        'Sent from the Mix Art Studio request form.'
+        'Sent from the Mix Art Design request form.'
       ].join('\n');
-      const subject = `Mix Art Studio request — ${business}`;
+      const subject = `Mix Art Design request — ${business}`;
       const mailto = `mailto:lomixartgo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
     });
