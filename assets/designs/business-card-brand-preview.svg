@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">Business card and brand mockup preview</title><desc id="desc">Business card, profile icon, and small brand asset preview.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#181419"/><stop offset="1" stop-color="#32213a"/></linearGradient><linearGradient id="mark" x1="0" x2="1"><stop stop-color="#ff4f88"/><stop offset=".5" stop-color="#ffd35a"/><stop offset="1" stop-color="#35d5a4"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#000" flood-opacity=".35"/></filter></defs>
+<rect width="900" height="650" rx="54" fill="url(#bg)"/>
+<g filter="url(#shadow)">
+<rect x="98" y="132" width="520" height="300" rx="32" fill="#fffaf2" transform="rotate(-5 358 282)"/><circle cx="205" cy="248" r="54" fill="url(#mark)"/><text x="282" y="242" font-family="Arial Black, Impact, sans-serif" font-size="46" fill="#181419">BUSINESS</text><text x="282" y="294" font-family="Arial Black, Impact, sans-serif" font-size="46" fill="#181419">CARDS</text><text x="160" y="372" font-family="Arial, sans-serif" font-size="24" fill="#685d68">Name • phone • email • socials</text>
+<rect x="370" y="252" width="420" height="245" rx="30" fill="#ffffff" transform="rotate(6 580 374)"/><rect x="420" y="306" width="116" height="116" rx="28" fill="#181419"/><text x="478" y="381" text-anchor="middle" font-family="Arial Black" font-size="54" fill="#ffd35a">M</text><text x="568" y="350" font-family="Arial Black, Impact, sans-serif" font-size="36" fill="#181419">BRAND</text><text x="568" y="394" font-family="Arial Black, Impact, sans-serif" font-size="36" fill="#181419">ASSETS</text><text x="568" y="435" font-family="Arial, sans-serif" font-size="22" fill="#685d68">cards • icons • banners</text>
+</g>
+<text x="450" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#fff" letter-spacing="5" font-weight="800">PRINT + WEB READY</text>
+</svg>

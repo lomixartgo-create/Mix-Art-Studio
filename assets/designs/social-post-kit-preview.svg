@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">Social media post kit preview</title><desc id="desc">A set of social media post templates for business announcements and promotions.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffaf2"/><stop offset="1" stop-color="#ffe1ef"/></linearGradient><linearGradient id="card" x1="0" x2="1"><stop stop-color="#35d5a4"/><stop offset="1" stop-color="#6c4dff"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#391431" flood-opacity=".22"/></filter></defs>
+<rect width="900" height="650" rx="54" fill="url(#bg)"/>
+<text x="94" y="94" font-family="Arial Black, Impact, sans-serif" font-size="50" fill="#181419">SOCIAL POST KIT</text>
+<text x="96" y="136" font-family="Arial, sans-serif" font-size="25" fill="#685d68">Profile posts, sale graphics, banners, and story cards.</text>
+<g filter="url(#shadow)">
+<rect x="104" y="195" width="230" height="330" rx="34" fill="#181419"/><circle cx="219" cy="286" r="56" fill="#ffd35a"/><text x="219" y="381" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="38" fill="#fff">NEW</text><text x="219" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#ffd35a" font-weight="800">SERVICE</text>
+<rect x="363" y="160" width="250" height="365" rx="36" fill="url(#card)"/><text x="488" y="272" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="45" fill="#fff">SALE</text><text x="488" y="335" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="76" fill="#fff">$25</text><text x="488" y="387" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#effff9" font-weight="700">STARTER GRAPHIC</text>
+<rect x="642" y="230" width="165" height="295" rx="30" fill="#ff4f88"/><path d="M674 442 C718 376 735 321 725 266 C768 311 784 370 770 442 Z" fill="#fffaf2" opacity=".85"/><text x="724" y="488" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="26" fill="#fff">STORY</text>
+</g>
+</svg>
