@@ -258,9 +258,9 @@
           <div class="full">
             <label>Project type</label>
             <div class="choices" role="radiogroup" aria-label="Project type choice">
-              <label class="choice"><input type="radio" name="package" value="Logo Starter - $49" checked><span>Logo Starter<br>$49</span></label>
-              <label class="choice"><input type="radio" name="package" value="Creator Brand Kit - $99"><span>Social Brand Kit<br>$99</span></label>
-              <label class="choice"><input type="radio" name="package" value="Art + Launch Kit - $249+"><span>Launch Kit<br>$249+</span></label>
+              <label class="choice"><input type="radio" name="package" value="Logo Starter - $25" checked><span>Logo Starter<br>$25</span></label>
+              <label class="choice"><input type="radio" name="package" value="Creator Brand Kit - $49"><span>Creator Brand Kit<br>$49</span></label>
+              <label class="choice"><input type="radio" name="package" value="Art + Launch Kit - $99+"><span>Art + Launch Kit<br>$99+</span></label>
             </div>
           </div>
 
@@ -300,11 +300,11 @@
       <aside class="side-card" aria-label="What happens next">
         <h2>What happens next?</h2>
         <p>After the request is sent, Mix Art Design can reply with questions, timing, and payment details before starting.</p>
+        <span class="price-pill">$25</span>
         <span class="price-pill">$49</span>
-        <span class="price-pill">$99</span>
-        <span class="price-pill">$249+</span>
+        <span class="price-pill">$99+</span>
         <ul>
-          <li>Good for local businesses, side hustles, creators, and personal art ideas.</li>
+          <li>Good for local businesses, side hustles, creators, computer repair, lawn care, and personal art ideas.</li>
           <li>Start small, then upgrade later.</li>
           <li>Final files can be prepared for social media, web, print, or sharing.</li>
         </ul>
@@ -320,7 +320,7 @@
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       const data = new FormData(form);
-      const packageChoice = data.get('package') || 'Logo Starter - $49';
+      const packageChoice = data.get('package') || 'Logo Starter - $25';
       const business = data.get('business') || 'New logo project';
       const body = [
         'Mix Art Design Quote Request',

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">Neon creator logo concept</title><desc id="desc">Bright creator logo with electric fox mark and streaming style text.</desc>
+<defs><linearGradient id="n" x1="0" x2="1"><stop stop-color="#151129"/><stop offset="1" stop-color="#37135d"/></linearGradient><linearGradient id="f" x1="0" x2="1"><stop stop-color="#00e5ff"/><stop offset="1" stop-color="#ff4fcb"/></linearGradient></defs>
+<rect width="900" height="650" rx="54" fill="url(#n)"/>
+<path d="M450 116 L602 205 L565 382 L450 455 L335 382 L298 205 Z" fill="none" stroke="url(#f)" stroke-width="28" stroke-linejoin="round"/>
+<path d="M350 245 L423 198 L450 272 L477 198 L550 245 L513 358 L450 400 L387 358 Z" fill="url(#f)"/>
+<circle cx="410" cy="302" r="16" fill="#151129"/><circle cx="490" cy="302" r="16" fill="#151129"/>
+<text x="450" y="534" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="74" fill="#fff" letter-spacing="-2">NEON FOX</text>
+<text x="450" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#88f6ff" letter-spacing="8">CREATOR</text>
+</svg>

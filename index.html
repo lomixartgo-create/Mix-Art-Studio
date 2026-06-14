@@ -370,12 +370,12 @@
 
     .portfolio-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
     }
 
     .portfolio-piece {
-      min-height: 380px;
+      min-height: 360px;
       border-radius: var(--radius-xl);
       border: 1px solid var(--line);
       background: var(--card);
@@ -388,7 +388,7 @@
       box-shadow: 0 18px 45px rgba(24,20,25,0.08);
     }
 
-    .portfolio-piece.wide { grid-row: span 2; }
+    .portfolio-piece.wide { grid-row: auto; }
 
     .logo-preview {
       width: 100%;
@@ -405,6 +405,24 @@
       height: 100%;
       object-fit: cover;
     }
+
+    .logo-preview.computer-repair { position: relative; background: #101827; }
+    .logo-preview.computer-repair img { filter: saturate(1.1) contrast(1.02); }
+    .logo-overlay {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      padding: 15px 16px;
+      border-radius: 20px;
+      background: rgba(5, 9, 18, 0.72);
+      border: 1px solid rgba(255,255,255,0.28);
+      color: white;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 16px 32px rgba(0,0,0,.28);
+    }
+    .logo-overlay strong { display: block; font-size: clamp(1.2rem, 3vw, 2rem); letter-spacing: -0.05em; line-height: .95; }
+    .logo-overlay span { display: block; margin-top: 6px; color: #ffd35a; font-weight: 900; letter-spacing: .12em; font-size: .82rem; }
 
     .piece-copy { padding: 18px 8px 4px; }
     .piece-copy h3 { margin: 0 0 8px; font-size: 1.55rem; letter-spacing: -0.045em; }
@@ -553,13 +571,13 @@
     <section id="services" class="site-shell">
       <div class="section-head">
         <h2>Art and design that helps your idea look real.</h2>
-        <p class="section-note">Start simple. Pick a small logo, a custom art piece, or a bigger launch package when you are ready.</p>
+        <p class="section-note">Intro prices while we build examples and reviews. Start small with a logo, repair card, lawn care badge, creator mark, or custom art piece.</p>
       </div>
       <div class="cards">
         <article class="card">
           <h3>Logo Starter</h3>
           <p>For a new hustle, page, shop, service, or project that needs a clean first look.</p>
-          <div class="price">$49</div>
+          <div class="price">$25</div>
           <ul>
             <li>1 custom logo direction</li>
             <li>Simple color palette</li>
@@ -569,7 +587,7 @@
         <article class="card">
           <h3>Creator Brand Kit</h3>
           <p>For creators and small businesses that want their page, profile, and posts to look connected.</p>
-          <div class="price">$99</div>
+          <div class="price">$49</div>
           <ul>
             <li>Logo plus alternate mark</li>
             <li>Profile image and banner</li>
@@ -579,11 +597,11 @@
         <article class="card">
           <h3>Art + Launch Kit</h3>
           <p>For custom art, a stronger brand look, and promo pieces that feel ready to show people.</p>
-          <div class="price">$249+</div>
+          <div class="price">$99+</div>
           <ul>
             <li>Brand kit assets</li>
             <li>Business card or flyer concept</li>
-            <li>Optional one-page website add-on</li>
+            <li>Optional flyer/social post add-on</li>
           </ul>
         </article>
       </div>
@@ -596,21 +614,43 @@
       </div>
       <div class="portfolio-grid">
         <article class="portfolio-piece wide">
-          <div class="logo-preview">
-            <img src="assets/artwork/hero-banner.png" alt="Colourful digital art banner with flowing paint and bright creative energy">
+          <div class="logo-preview computer-repair">
+            <img src="assets/artwork/bean-computer-repair-bg.png" alt="Robot and Bee computer repair themed artwork">
+            <div class="logo-overlay">
+              <strong>Bean Computer Repair</strong>
+              <span>FIX • SETUP • CLEANUP</span>
+            </div>
           </div>
           <div class="piece-copy">
-            <h3>Colour rush hero style</h3>
-            <p>A bright, polished look for the top of the site, social headers, posters, and creative promo graphics.</p>
+            <h3>Computer repair preview</h3>
+            <p>A tech repair style using the robot and Bee energy you liked, with a real logo laid over the artwork.</p>
           </div>
         </article>
         <article class="portfolio-piece">
           <div class="logo-preview">
-            <img src="assets/artwork/abstract-print.png" alt="Abstract print style artwork with teal, orange, magenta, and black ink lines">
+            <img src="assets/logos/greenline-lawn-care-pro.svg" alt="Greenline Lawn Care logo concept with grass blades and sun">
           </div>
           <div class="piece-copy">
-            <h3>Abstract print style</h3>
-            <p>A stronger art-print direction with colour, movement, and a handmade mixed-media feel.</p>
+            <h3>Greenline Lawn Care</h3>
+            <p>A cleaner, stronger lawn care badge that looks more like a sellable logo preview.</p>
+          </div>
+        </article>
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/logos/coastal-cuts-lawn-care.svg" alt="Coastal Cuts Lawn Care logo concept with wave and lawn stripes">
+          </div>
+          <div class="piece-copy">
+            <h3>Coastal Cuts Lawn Care</h3>
+            <p>A second lawn care direction with a Nova Scotia/coastal feel, good for local service businesses.</p>
+          </div>
+        </article>
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/logos/neon-fox-creator.svg" alt="Neon Fox Creator mascot logo concept">
+          </div>
+          <div class="piece-copy">
+            <h3>Neon Fox Creator</h3>
+            <p>A bold creator/streamer style for profile pictures, shop names, gaming pages, and merch ideas.</p>
           </div>
         </article>
         <article class="portfolio-piece">
@@ -618,8 +658,8 @@
             <img src="assets/artwork/robot-artist.png" alt="Cute robot artist painting in a colourful studio">
           </div>
           <div class="piece-copy">
-            <h3>Character art style</h3>
-            <p>A playful character-art direction for mascots, profile images, stickers, kids projects, and fun brands.</p>
+            <h3>Robot artist style</h3>
+            <p>The robot artwork stays because it has personality. This style can become mascots, stickers, or profile art.</p>
           </div>
         </article>
       </div>
