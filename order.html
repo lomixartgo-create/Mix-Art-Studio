@@ -232,11 +232,15 @@
     <section class="shell hero">
       <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Quote request form</span>
       <h1>Tell us what you want made.</h1>
-      <p>Fill this out and it will open an email draft addressed to Mix Art Design. You can review it before sending.</p>
+      <p>Fill this out and it will send your request straight to Mix Art Design. We will reply by email.</p>
     </section>
 
     <section class="shell layout">
-      <form id="orderForm">
+      <form id="orderForm" action="https://formsubmit.co/lomixartgo@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Mix Art Design quote request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://mixartdesign.ca/thank-you.html">
         <div class="form-grid">
           <div>
             <label for="name">Your name</label>
@@ -291,8 +295,8 @@
           </div>
 
           <div class="full">
-            <button class="btn" type="submit">Open quote request</button>
-            <p class="hint">This does not charge anything. It just prepares an email so the request is easy to send.</p>
+            <button class="btn" type="submit">Send quote request</button>
+            <p class="hint">This does not charge anything. It sends your request so Mix Art Design can reply with questions, timing, and payment details.</p>
           </div>
         </div>
       </form>
@@ -315,36 +319,5 @@
 
   <footer>© 2026 Mix Art Design — Custom art, logos, graphics, and starter brand kits.</footer>
 
-  <script>
-    const form = document.getElementById('orderForm');
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const data = new FormData(form);
-      const packageChoice = data.get('package') || 'Logo Starter - $25';
-      const business = data.get('business') || 'New logo project';
-      const body = [
-        'Mix Art Design Quote Request',
-        '',
-        `Name: ${data.get('name') || ''}`,
-        `Email: ${data.get('email') || ''}`,
-        `Business / project / art name: ${business}`,
-        `What is it for?: ${data.get('type') || ''}`,
-        `Project type: ${packageChoice}`,
-        `Colors: ${data.get('colors') || ''}`,
-        `Style: ${data.get('style') || ''}`,
-        '',
-        'What should it feel like?',
-        data.get('details') || '',
-        '',
-        'Where will you use it?',
-        data.get('usage') || '',
-        '',
-        'Sent from the Mix Art Design request form.'
-      ].join('\n');
-      const subject = `Mix Art Design request — ${business}`;
-      const mailto = `mailto:lomixartgo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailto;
-    });
-  </script>
 </body>
 </html>
