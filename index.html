@@ -91,6 +91,14 @@
       font-size: 0.9rem;
     }
 
+    .brand-logo-mini {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 12px 26px rgba(255, 211, 90, 0.24);
+    }
+
     .nav-links {
       display: flex;
       align-items: center;
@@ -136,6 +144,37 @@
       align-items: center;
       gap: 44px;
       padding: 56px 0 70px;
+    }
+
+    .logo-hero {
+      min-height: calc(100vh - 96px);
+      display: grid;
+      place-items: center;
+      padding: 18px 0 72px;
+      text-align: center;
+    }
+
+    .logo-stage {
+      width: min(760px, 94vw);
+      display: grid;
+      place-items: center;
+      gap: 18px;
+    }
+
+    .main-logo {
+      width: min(680px, 92vw);
+      height: auto;
+      display: block;
+      border-radius: 34px;
+      box-shadow: 0 30px 90px rgba(43, 23, 57, 0.18);
+    }
+
+    .logo-scroll-note {
+      color: var(--muted);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
     }
 
     .eyebrow {
@@ -532,6 +571,8 @@
     @media (max-width: 560px) {
       .site-shell { width: min(100% - 22px, var(--max)); }
       h1 { font-size: 3.15rem; }
+      .logo-hero { min-height: calc(100vh - 86px); padding-top: 8px; }
+      .main-logo { width: min(96vw, 520px); border-radius: 24px; }
       .hero-actions, .contact .hero-actions { flex-direction: column; }
       .btn { width: 100%; }
       .canvas { min-height: 390px; padding: 16px; }
@@ -548,7 +589,7 @@
 <body>
   <header class="site-shell nav" aria-label="Main navigation">
     <a class="brand" href="#top" aria-label="Mix Art Design home">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <img class="brand-logo-mini" src="assets/logos/mix-art-design-logo.png" alt="" aria-hidden="true">
       <span>Mix Art Design</span>
     </a>
     <nav class="nav-links" aria-label="Page sections">
@@ -561,20 +602,10 @@
   </header>
 
   <main id="top">
-    <section class="site-shell hero">
-      <div>
-        <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Custom art • logos • hustle design</span>
-        <h1>Turn your <span class="accent-word">hustle</span> into something people remember.</h1>
-        <p class="hero-copy">Mix Art Design helps hustlers, small businesses, creators, and everyday dreamers turn ideas into custom artwork, logos, graphics, and designs that are ready to share, sell, or show off.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#services">See what we make</a>
-          <a class="btn btn-secondary" href="#work">View artwork</a>
-        </div>
-      </div>
-      <div class="hero-card" aria-label="Polished Bee artwork for Mix Art Design">
-        <div class="canvas hero-art bee-hero">
-          <img src="assets/artwork/bright-painted-canvas.png?v=hero-bee-1" alt="Bright polished Bee artwork with CEO Patrick Brown signature and yellow bee">
-        </div>
+    <section class="site-shell logo-hero" aria-label="Mix Art Design logo">
+      <div class="logo-stage">
+        <img class="main-logo" src="assets/logos/mix-art-design-logo.png" alt="Mix Art Design logo">
+        <a class="logo-scroll-note" href="#services">Scroll for services ↓</a>
       </div>
     </section>
 
