@@ -275,12 +275,24 @@
       transform: scale(1.04);
     }
 
+    .hero-art.bee-hero {
+      background: #fffaf2;
+    }
+
+    .hero-art.bee-hero img {
+      object-fit: contain;
+      transform: none;
+      padding: 10px;
+    }
+
     .hero-art::after {
       content: "";
       position: absolute;
       inset: 0;
       background: linear-gradient(180deg, rgba(24,20,25,0.04), rgba(24,20,25,0.74));
     }
+
+    .hero-art.bee-hero::after { display: none; }
 
     .hero-art-label {
       position: relative;
@@ -559,13 +571,9 @@
           <a class="btn btn-secondary" href="#work">View artwork</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Colourful Mix Art Design sample artwork">
-        <div class="canvas hero-art">
-          <img src="assets/artwork/hero-banner.png" alt="Colourful flowing digital artwork for Mix Art Design">
-          <div class="hero-art-label">
-            <strong>Custom art with colour, personality, and a little attitude.</strong>
-            <span>Made for side hustles, creators, local businesses, prints, and personal projects.</span>
-          </div>
+      <div class="hero-card" aria-label="Polished Bee artwork for Mix Art Design">
+        <div class="canvas hero-art bee-hero">
+          <img src="assets/artwork/bright-painted-canvas.png?v=hero-bee-1" alt="Bright polished Bee artwork with CEO Patrick Brown signature and yellow bee">
         </div>
       </div>
     </section>
