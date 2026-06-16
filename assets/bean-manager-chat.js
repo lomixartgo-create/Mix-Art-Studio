@@ -3,7 +3,7 @@
   const isOrderPage = /order\.html(?:$|[?#])/.test(window.location.pathname) || document.getElementById('orderForm');
 
   const questions = [
-    { key: 'package', label: 'Which package sounds closest?', prompt: 'What are you looking for?', chips: ['Logo Starter - $25', 'Creator Brand Kit - $49', 'Art + Launch Kit - $99+', 'Not sure yet'] },
+    { key: 'package', label: 'Which package sounds closest?', prompt: 'What are you looking for?', chips: ['Logo Starter - from $35', 'Creator Brand Kit - from $79', 'Art + Launch Kit - from $149+', 'Not sure yet'] },
     { key: 'name', label: 'Name', prompt: 'What is your name?' },
     { key: 'email', label: 'Email', prompt: 'What email should Patrick reply to?' },
     { key: 'business', label: 'Project name', prompt: 'What is the business, project, art, or idea called?' },
