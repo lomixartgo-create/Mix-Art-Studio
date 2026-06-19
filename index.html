@@ -457,6 +457,36 @@
       object-fit: cover;
     }
 
+    .print-callout {
+      margin-top: 20px;
+      border-radius: 32px;
+      padding: 28px;
+      background:
+        radial-gradient(circle at 12% 12%, rgba(250,118,43,.20), transparent 18rem),
+        radial-gradient(circle at 88% 0%, rgba(34,102,67,.18), transparent 20rem),
+        rgba(255,255,255,.76);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 45px rgba(24,20,25,.08);
+    }
+
+    .print-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .print-list li {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #1f6b43;
+      color: #fffaf2;
+      font-weight: 900;
+      box-shadow: 0 10px 24px rgba(31,107,67,.16);
+    }
+
     .logo-preview.computer-repair { position: relative; background: #101827; }
     .logo-preview.computer-repair img { filter: saturate(1.1) contrast(1.02); }
     .logo-preview.canvas-art { background: #fffaf2; aspect-ratio: 2 / 3; }
@@ -609,6 +639,7 @@
     <nav class="nav-links" aria-label="Page sections">
       <a href="#services">Services</a>
       <a href="#work">Sample work</a>
+      <a href="#printing">Printing</a>
       <a href="#process">Process</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -626,7 +657,7 @@
     <section id="services" class="site-shell">
       <div class="section-head">
         <h2>Art and design that helps your idea look real.</h2>
-        <p class="section-note">Starting prices while we build examples and reviews. Start small with a logo, flyer, social post, business card, shop sign, tattoo idea, repair card, lawn care badge, creator mark, or custom art piece.</p>
+        <p class="section-note">Starting prices while we build examples and reviews. Start small with a logo, flyer, social post, business card, shop sign, tattoo idea, repair card, lawn care badge, creator mark, custom art piece, or printed product mockup.</p>
       </div>
       <p class="section-note">Starting prices. Final quote depends on complexity, turnaround, and file needs.</p>
       <div class="cards">
@@ -668,6 +699,16 @@
             <li>Brand kit assets</li>
             <li>Business card or flyer concept</li>
             <li>Optional flyer/social post add-on</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Print Add-ons</h3>
+          <p>Printing is available upon request after the design is approved.</p>
+          <div class="price">Added price</div>
+          <ul>
+            <li>Posters, stickers, business cards, flyers, and canvas art</li>
+            <li>Hoodies and t-shirts when the design is ready for apparel</li>
+            <li>Print, shipping, and handling are quoted before ordering</li>
           </ul>
         </article>
       </div>
@@ -777,6 +818,62 @@
       </div>
     </section>
 
+    <section id="printing" class="site-shell">
+      <div class="section-head">
+        <h2>Printed products available upon request.</h2>
+        <p class="section-note">We can make the design first, then quote printing separately before anything is ordered. Printing, shipping, taxes, and handling are added to the design price after customer approval.</p>
+      </div>
+      <div class="print-callout">
+        <p class="section-note">Ask about printed posters, stickers, business cards, flyers, canvas art, t-shirts, and hoodies. We can prepare the artwork for a print shop or print-on-demand partner and confirm the added price before ordering.</p>
+        <ul class="print-list" aria-label="Printed products available">
+          <li>Posters</li>
+          <li>Stickers</li>
+          <li>Business cards</li>
+          <li>Canvas art</li>
+          <li>T-shirts</li>
+          <li>Hoodies</li>
+        </ul>
+      </div>
+      <div class="portfolio-grid" style="margin-top:18px;">
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/printing/poster-print-preview.png?v=print-1" alt="Mix Art Design custom poster print preview">
+          </div>
+          <div class="piece-copy">
+            <h3>Posters + art prints</h3>
+            <p>Custom posters for events, promos, gifts, wall art, tattoo references, and small business advertising.</p>
+          </div>
+        </article>
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/printing/tshirt-print-preview.png?v=print-1" alt="Mix Art Design t-shirt print preview with logo artwork">
+          </div>
+          <div class="piece-copy">
+            <h3>T-shirts</h3>
+            <p>Customer-approved artwork can be prepared for shirts, with print and shipping quoted as an add-on.</p>
+          </div>
+        </article>
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/printing/hoodie-print-preview.png?v=print-1" alt="Mix Art Design hoodie print preview with logo artwork">
+          </div>
+          <div class="piece-copy">
+            <h3>Hoodies</h3>
+            <p>Logo, mascot, slogan, or custom art hoodie mockups can be quoted before printing.</p>
+          </div>
+        </article>
+        <article class="portfolio-piece">
+          <div class="logo-preview">
+            <img src="assets/printing/print-options-preview.png?v=print-1" alt="Mix Art Design print options preview for stickers, cards, posters, and canvas art">
+          </div>
+          <div class="piece-copy">
+            <h3>Stickers, cards + canvas</h3>
+            <p>Printing is available upon request for stickers, business cards, posters, flyers, and canvas-style art.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="process" class="site-shell">
       <div class="section-head">
         <h2>Simple process, no design confusion.</h2>
@@ -786,7 +883,7 @@
         <div class="step"><strong>Quick brief</strong><span>Tell us the idea, the feeling, colours you like, and where the art or design will be used.</span></div>
         <div class="step"><strong>Quote + payment</strong><span>We confirm the scope, price, and payment arrangement before design work starts.</span></div>
         <div class="step"><strong>First concept</strong><span>A first visual direction with one round of small changes to tune the colours, wording, layout, or overall feel.</span></div>
-        <div class="step"><strong>Final files</strong><span>Ready-to-use files for profiles, websites, flyers, signs, prints, and social posts.</span></div>
+        <div class="step"><strong>Final files</strong><span>Ready-to-use files for profiles, websites, flyers, signs, prints, shirts, hoodies, stickers, and social posts.</span></div>
       </div>
     </section>
 
@@ -794,7 +891,7 @@
       <div class="contact">
         <div>
           <h2>Ready to turn your hustle into something people notice?</h2>
-          <p>Send the idea, even if it is rough. We can start with a logo, tattoo idea sketch, custom art piece, social graphic, or a small launch package. Payment is arranged after the quote is confirmed.</p>
+          <p>Send the idea, even if it is rough. We can start with a logo, tattoo idea sketch, custom art piece, social graphic, printed poster, shirt/hoodie mockup, or a small launch package. Printing is available upon request with an added quote after the design is approved.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="order.html">Request a quote</a>
             <a class="btn btn-secondary" href="#services">See packages</a>
@@ -803,7 +900,8 @@
         <aside class="contact-card" aria-label="Business details">
           <div><span>Studio</span><strong>Mix Art Design</strong></div>
           <div><span>Focus</span><strong>Art, tattoo ideas + design</strong></div>
-          <div><span>Good for</span><strong>Hustles + creators</strong></div>
+          <div><span>Good for</span><strong>Hustles, creators + prints</strong></div>
+          <div><span>Printing</span><strong>Available upon request</strong></div>
           <div><span>Payment</span><strong>Arranged after quote approval</strong></div>
           <div><span>Quotes</span><strong>quotes@mixartdesign.ca</strong></div>
           <div><span>General</span><strong>contact@mixartdesign.ca</strong></div>
@@ -815,7 +913,7 @@
 
   <footer class="site-shell">
     <span>© 2026 Mix Art Design</span>
-    <span>Custom art, logos, tattoo ideas, graphics, and starter brand kits.</span>
+    <span>Custom art, logos, tattoo ideas, graphics, printed-product mockups, and starter brand kits.</span>
     <span>Questions or messages: contact@mixartdesign.ca · hello@mixartdesign.ca · quotes@mixartdesign.ca</span>
   </footer>
   <script src="assets/bean-manager-chat.js" defer></script>
