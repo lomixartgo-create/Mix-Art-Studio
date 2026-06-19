@@ -172,6 +172,29 @@
     }
     .choice input:checked + span { color: white; background: var(--ink); border-color: var(--ink); }
 
+    .print-check {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.72);
+      cursor: pointer;
+    }
+
+    .print-check input {
+      width: 22px;
+      min-height: 22px;
+      height: 22px;
+      margin: 3px 0 0;
+      accent-color: var(--ink);
+    }
+
+    .print-check strong { display: block; margin-bottom: 4px; }
+    .print-check span { display: block; color: var(--muted); line-height: 1.45; font-weight: 700; }
+
     .btn {
       appearance: none;
       border: 0;
@@ -294,6 +317,18 @@
           </div>
 
           <div class="full">
+            <label class="print-check" for="printingRequested">
+              <input id="printingRequested" name="printing_requested" type="checkbox" value="Yes - quote printing at additional cost">
+              <span><strong>Have this printed at additional cost</strong>Check this if you want a separate quote for posters, stickers, business cards, canvas art, t-shirts, hoodies, or other printed items after the design is approved.</span>
+            </label>
+          </div>
+
+          <div class="full">
+            <label for="printDetails">Print details, if wanted</label>
+            <textarea id="printDetails" name="print_details" placeholder="Optional: poster size, sticker quantity, business cards, canvas art, t-shirt/hoodie size, shipping needs, or not sure yet."></textarea>
+          </div>
+
+          <div class="full">
             <label for="usage">Where will you use it?</label>
             <textarea id="usage" name="usage" placeholder="Tattoo reference, Facebook, flyers, business cards, website, shirts, hoodies, signs, YouTube, posters, canvas art, prints, stickers, etc."></textarea>
           </div>
@@ -320,7 +355,7 @@
           <li>Start small, then upgrade later.</li>
           <li>Final files can be prepared for social media, web, print, posters, stickers, business cards, shirts, hoodies, or sharing.</li>
         </ul>
-        <div class="note">Tip: include links or screenshots of styles you like. If you want printing, say what item you want and the size/quantity if you know it.</div>
+        <div class="note">Tip: include links or screenshots of styles you like. Use the printing checkbox if you want printed items quoted separately. Add size or quantity if you know it.</div>
       </aside>
     </section>
   </main>
