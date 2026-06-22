@@ -28,13 +28,20 @@
   font: inherit;
 }
 
-.bean-chat-launcher span:first-child {
+.bean-chat-launcher-icon {
   display: inline-grid;
   place-items: center;
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: rgba(255,255,255,0.72);
+  overflow: hidden;
+}
+
+.bean-chat-launcher-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bean-chat-panel {
@@ -73,7 +80,12 @@
   background: #fff3e8;
   display: grid;
   place-items: center;
-  font-size: 24px;
+  overflow: hidden;
+}
+.bean-chat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .bean-chat-title strong { display: block; }
 .bean-chat-title small { display: block; color: rgba(255,255,255,0.72); margin-top: 2px; }

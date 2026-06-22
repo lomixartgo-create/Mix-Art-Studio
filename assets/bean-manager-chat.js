@@ -37,19 +37,21 @@
 
   function buildWidget() {
     if (document.querySelector('.bean-chat-launcher')) return;
-    const launcher = el('button', { class: 'bean-chat-launcher', type: 'button', 'aria-label': 'Open Bean Manager quote helper' }, [
-      el('span', { text: '🤖' }),
-      el('span', { text: 'Bean Manager' })
+    const launcher = el('button', { class: 'bean-chat-launcher', type: 'button', 'aria-label': 'Open customer service quote helper' }, [
+      el('span', { class: 'bean-chat-launcher-icon' }, [
+        el('img', { src: 'assets/logos/mix-art-design-logo.png?v=chat-logo-1', alt: '' })
+      ]),
+      el('span', { text: 'Customer Service' })
     ]);
 
-    const panel = el('section', { class: 'bean-chat-panel', 'aria-label': 'Bean Manager quote helper' });
+    const panel = el('section', { class: 'bean-chat-panel', 'aria-label': 'Customer service quote helper' });
     panel.innerHTML = `
       <div class="bean-chat-head">
         <div class="bean-chat-title">
-          <div class="bean-chat-avatar" aria-hidden="true">🤖</div>
-          <div><strong>Bean Manager</strong><small>Quote helper for Mix Art Design</small></div>
+          <div class="bean-chat-avatar" aria-hidden="true"><img src="assets/logos/mix-art-design-logo.png?v=chat-logo-1" alt=""></div>
+          <div><strong>Customer Service</strong><small>Quote helper for Mix Art Design</small></div>
         </div>
-        <button class="bean-chat-close" type="button" aria-label="Close Bean Manager">×</button>
+        <button class="bean-chat-close" type="button" aria-label="Close customer service">×</button>
       </div>
       <div class="bean-chat-log" aria-live="polite"></div>
       <div class="bean-chat-quick"></div>
@@ -97,7 +99,7 @@
       bot('Welcome back. I still have your quote notes saved. You can keep going or fill the form.');
       step = nextMissingStep();
     } else {
-      bot('Hi, I’m Bean Manager. I can help collect your idea so Patrick can reply with a proper quote. No payment happens here.');
+      bot('Hi, I’m customer service for Mix Art Design. I can help collect your idea so Patrick can reply with a proper quote. No payment happens here.');
       step = 0;
     }
     askCurrent();
